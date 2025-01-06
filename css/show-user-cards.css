@@ -1,0 +1,190 @@
+#user-cards-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+#user-cards-container .user-card {
+    position: relative;
+    background: var(--input-border-color);
+    border: 2px solid var(--black-color);
+    border-radius: 10px;
+    padding: 24px;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    max-width: calc( 33.33% - 24px );
+    width: 100%;
+}
+
+@media (max-width: 1280px) {
+    #user-cards-container .user-card {
+        max-width: calc( 50% - 24px );
+    }
+}
+
+@media (max-width: 768px) {
+    #user-cards-container .user-card {
+        max-width: 100%;
+    }
+}
+
+#user-cards-container .user-card-details img.card-type {
+    max-width: 48px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0px 0px 0px auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+#user-cards-container .user-card-details p {
+    margin: 0;
+    padding: 4px 0px;
+    font-size: 16px;
+}
+
+#user-cards-container .user-card-details p.card-number {
+    font-size: 20px;
+    color: var(--white-color);
+}
+
+#user-cards-container p:first-child {
+    font-size: 24px;
+}
+
+#user-cards-container .card-form-ctas {
+    margin-top: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 8px;
+}
+
+#user-cards-container .card-form-ctas .button {
+    height: 48px;
+    font-size: 16px;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+#user-cards-container .card-form-ctas input[type="submit"].delete-card-button {
+    background: var(--red-color);
+    color: var(--white-color);
+}
+
+#user-cards-container .card-form-ctas input[type="submit"].delete-card-button:hover {
+    background: var(--red-color);
+}
+
+/*-------------- CONFIRMATION MODAL ------------*/
+
+.confirmation-modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 9999999;
+    inset: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+
+.confirmation-modal .confirmation-modal-container {
+    background: #f7f7f7;
+    width: 100%;
+    height: 100%;
+    max-height: 272px;
+    max-width: 450px;
+    padding: 16px 16px 32px 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 8px;
+    gap: 16px;
+}
+
+.confirmation-modal .confirmation-modal-container .icon-info:before  {
+    content: '\e800';
+    color: #ff5f6d;
+    font-size: 56px;
+}
+
+.confirmation-modal .confirmation-modal-container h2 {
+    color: var(--text-black-color);
+    font-size: 24px;
+    font-family: var(--secondary-font);
+    text-align: center;
+    margin: 0px;
+    line-height: calc( 20px * 1.5);
+}
+
+.confirmation-modal .confirmation-modal-container h2 span {
+    color: #ff5f6d;
+    font-weight: bold;
+}
+
+.confirmation-modal .confirmation-modal-container .modal-ctas {
+    margin-top: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.confirmation-modal .confirmation-modal-container .modal-ctas
+button {
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    padding: 12px 16px;
+}
+
+.confirmation-modal .confirmation-modal-container .modal-ctas
+button.yes {
+    background: #ff5f6d;
+    border-color: #ff5f6d;
+}
+
+.confirmation-modal .confirmation-modal-container .modal-ctas
+button.no {
+    background: var(--text-black-color);
+}

@@ -1,0 +1,57 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.refound-section .refound-section-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 24px;
+}
+
+.refound-section .refound-section-container 
+form.refound-form {
+    padding: 16px;
+    background: var(--input-border-color);
+    border: 2px solid var(--black-color);
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px;
+}
+
+.refound-section .refound-section-container
+form.refound-form input:not([type="submit"]) {
+    height: 48px;
+    padding: 0px 16px;
+    color: var(--white-color);
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    border: 1px solid var(--black-color);
+    background: #2d303e;
+}
+
+.refound-section .refound-section-container
+form.refound-form input[type="submit"] {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    padding: 12px 16px;
+    background: var(--primary-color);
+    color: var(--black-color);
+    font-weight: bold;
+    font-family: var(--secondary-font);
+    border-color: var(--primary-color);
+}

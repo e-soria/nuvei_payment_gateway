@@ -1,0 +1,240 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.woocommerce_page_nuvei_orders_page div#wpcontent {
+    background: #f5f5fb;
+}
+
+section.nuvei-orders-section {
+    padding: 40px 16px;
+}
+
+/************** ORDER FILTERS *****************/
+/*********************************************/
+
+section.nuvei-orders-section form.nuvei-order-filters {
+    margin: 24px 0px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap:  12px;
+}
+
+section.nuvei-orders-section form.nuvei-order-filters div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+section.nuvei-orders-section form.nuvei-order-filters div.filter-date {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 12px;
+}
+
+section.nuvei-orders-section form.nuvei-order-filters label {
+    font-weight: bold;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+section.nuvei-orders-section form.nuvei-order-filters select {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+section.nuvei-orders-section form.nuvei-order-filters div.filter-ctas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px;
+}
+
+section.nuvei-orders-section form.nuvei-order-filters input[type="submit"],
+section.nuvei-orders-section form.nuvei-order-filters input[type="button"] {
+    padding: 8px 15px;
+    background-color: #2f97ff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+section.nuvei-orders-section form.nuvei-order-filters input[type="submit"]:hover,
+section.nuvei-orders-section form.nuvei-order-filters input[type="button"]:hover {
+    background-color: #005bb5;
+}
+
+section.nuvei-orders-section form.nuvei-order-filters input.reset-filters {
+    background: transparent;
+    border: 1px solid #2f97ff;
+    color: #2f97ff;
+}
+
+section.nuvei-orders-section form.nuvei-order-filters input.reset-filters:hover {
+    background: transparent;
+    color: #005bb5;
+}
+
+/************** ORDERS TABLE *****************/
+/********************************************/
+
+table.nuvei-orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: Arial, sans-serif;
+    margin-top: 24px;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+}
+
+table.nuvei-orders-table tr:nth-child(2n + 1) {
+    background: #f5f5fb;
+}
+
+table.nuvei-orders-table th {
+    background-color: #fff;
+    text-align: left;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 1px solid #ddd;
+    font-weight: 600;
+}
+
+table.nuvei-orders-table td {
+    padding: 12px 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+table.nuvei-orders-table td.success span {
+    background: #bbebbb;
+    padding: 8px 16px;
+    display: inline-block;
+    border-radius: 4px;
+    color: #2f9d2f;
+    border: none;
+    font-family: var(--primary-font);
+}
+
+table.nuvei-orders-table td.failure span {
+    background: #ffabab;
+    padding: 8px 16px;
+    display: inline-block;
+    border-radius: 4px;
+    color: #932929;
+    border: none;
+}
+
+table.nuvei-orders-table td.pending span {
+    background: #ffdea3;
+    padding: 8px 16px;
+    display: inline-block;
+    border-radius: 4px;
+    color: #8d6928;
+    border: none;
+}
+
+table.nuvei-orders-table a {
+    text-decoration: underline;
+    color: #0073e6;
+}
+
+table.nuvei-orders-table input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+table.nuvei-orders-table input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+table.nuvei-orders-table input[type="submit"]:hover {
+    background-color: #005bbf;
+}
+
+/********** ALERTS ***********/
+
+.alert {
+    padding: 24px;
+    border-radius: 8px;
+    width: 100%;
+    border: 1px solid;
+    border-top: 5px solid;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0px 8px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    align-content: center;
+}
+
+.alert p {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0px;
+}
+
+.alert .icon-info:before {
+    font-size: 20px;
+    font-family: "hiit_brand_icons";
+    margin: 0px 8px 0px 0px;
+    vertical-align: middle;
+    width: auto;
+}
+
+/*------------- INFO ----------------*/
+
+.alert.info-alert {
+    background: #c2dfff;
+    border-color: #3086e5;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin-top: 24px;
+}
+
+.alert.info-alert p {
+    color: #2a6fbb;
+}
