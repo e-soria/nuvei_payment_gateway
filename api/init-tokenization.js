@@ -57,7 +57,7 @@ let responseCallback = (response) => {
         alertHTML = 
             `
             <div class='alert error-alert' style="margin-bottom: 24px;">
-                <p><i class="icon-info" aria-hidden="true"></i>Hubo un problema con tu tarjeta. La conexión fue rechazada. Por favor escríbenos a <a href="mailto:hi@staging.hiitclub.online">hi@staging.hiitclub.online</a>.</p>
+                <p><i class="icon-info" aria-hidden="true"></i>Hubo un problema con tu tarjeta. La conexión fue rechazada. Por favor escríbenos.</p>
             </div>
         `;
 
@@ -101,7 +101,7 @@ let notCompletedFormCallback = (message) => {
     } else {
         alertHTML = `
             <div class='alert error-alert' style="margin-bottom: 24px;">
-                <p><i class="icon-info" aria-hidden="true"></i>Ha ocurrido un error. Por favor revisa la información de tu tarjeta o contáctate con <a mailto="soporte@staging.hiitclub.online">soporte@staging.hiitclub.online</a></p>
+                <p><i class="icon-info" aria-hidden="true"></i>Ha ocurrido un error. Por favor revisa la información de tu tarjeta o contáctanos.</p>
             </div>
         `;
     }
