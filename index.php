@@ -1,11 +1,13 @@
 <?php
 
 /**
- * Plugin Name: Nuvei Payment Gateway
- * Author Name: Enzo Soria
- * Description: This plugin allows you to integrate Nuvei as a payment gateway.
- * Version: 0.1.0
-*/ 
+    * Plugin Name: Nuvei Payment Gateway
+    * Description: Permite a los usuarios realizar pagos con tarjeta de crédito y débito a través de la pasarela de pagos de Nuvei.
+    * Author: Enzo Soria
+    * Author URI: https://enzosoria.com
+    * License: GPL v3
+    * License URI: https://www.gnu.org/licenses/gpl-3.0.html 
+**/
 
 include(dirname(__FILE__) . '/plugin_config.php');
 
